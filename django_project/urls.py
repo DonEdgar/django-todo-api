@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+"""
+Creates url endpoints for both admin and api
+"""
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include("todos.urls")),

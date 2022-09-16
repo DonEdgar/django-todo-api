@@ -3,6 +3,10 @@ from django.test import TestCase
 from .models import Todo
 
 class TodoModelTest(TestCase):
+    """
+    Creates tests based on the Todo model, to make sure entries get properly added to the models
+    Also tests to make sure the string representation is the title of the model
+    """
     @classmethod
     def setUpTestData(cls):
         cls.todo = Todo.objects.create(
